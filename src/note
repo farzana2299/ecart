@@ -1,0 +1,17 @@
+redux cheyyan
+--------------
+aadhyam  redux tool kit install cheyyuka
+react-redux install cheyyuka
+
+first store create cheyyuka - athin use cheyyunna method configureStore
+import cheyth kazhinjaal athina oru variable store cheyyanam. ennit athinta akath
+ venam reducer kodukkan.
+ index.js in <App.js></App.js> ne <Provider store={store}></Provider> akath kodkkanam- store correct aayit 
+ work aavan.
+ slice create cheyyan createSlice import cheyyanam
+ createSlice n oru variable store cheyyanam.
+ ath kazhinj slice name and initial state kodkkanam ath kazhinj athinta actions kodkkanam. 
+ ath kazhinj storeilek cartslice na call cheyyanam. ennit reducer il call cheyyanam.
+ ini wishlist work aavandath landing page il click cheyyumbol appo athine landingpageilek
+ dispatch cheyyanam(useDispath). ennit athinta object create cheyyanam.
+ ennit button click cheyyumbol aan cart add cheyyanadath. appol aa buttonil onaclick il 
