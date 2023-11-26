@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import ItemCard from './ItemCard'
-import axios from 'axios'
+
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchProducts } from '../redux/productSlice';
 
 function Landing() {
-      //state to hold the datas
-  const [item, setItems] = useState([])
-  //api to get all item from db.json
-  const fetchItem = async () => {
-    var result = await axios.get('https://fakestoreapi.com/products')
-    setItems(result.data)
-  }
-  console.log(item);
+  const dispatch=useDispatch()
+  const {loading,allProducts,error}=useSelector(state=>state.productSlice)
+
   useEffect(() => {
-    fetchItem()
+    dispatch(fetchProducts())
   }, [])
+  // console.log(allProducts);
   return (
     <div>
-        <ItemCard data={item}></ItemCard>
+        <ItemCard data={allProducts}></ItemCard>
     </div>
   )
 }

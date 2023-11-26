@@ -15,3 +15,6 @@ import cheyth kazhinjaal athina oru variable store cheyyanam. ennit athinta akat
  ini wishlist work aavandath landing page il click cheyyumbol appo athine landingpageilek
  dispatch cheyyanam(useDispath). ennit athinta object create cheyyanam.
  ennit button click cheyyumbol aan cart add cheyyanadath. appol aa buttonil onaclick il 
+
+createAsyncThunk-synchronous aaya filil nthelum asynchronous aayiot craete cheyyan use cheyyunna
+ toolkit il ulla method example api calls 
